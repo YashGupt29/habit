@@ -9,10 +9,8 @@ const Navbar = () => {
 
   return (
     <div className="bg-gray-100 pt-2 md:px-[5em] flex justify-between items-center">
-      {/* Logo */}
       <img src={image} width={120} className="ml-[2rem]" />
 
-      {/* Desktop Menu */}
       <div className="hidden md:flex justify-center items-center md:gap-[2rem]">
         <p className="text-gray-600 text-sm">Find Suppliers</p>
         <select className="text-gray-600 text-sm bg-transparent cursor-pointer rounded-md px-2 py-1 focus:outline-none">
@@ -23,12 +21,11 @@ const Navbar = () => {
             </option>
           ))}
         </select>
-        <Button className="text-[#00732F] border-[#00732F]" variant="ghost">
-          Login/Sign Up
+        <Button className="border-[#00732F]" variant="ghost">
+          <span> Login/Sign Up</span>
         </Button>
       </div>
 
-      {/* Hamburger Icon */}
       <button
         className="md:hidden mr-4 focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
@@ -49,7 +46,6 @@ const Navbar = () => {
         </svg>
       </button>
 
-      {/* Slide-in Hamburger Menu */}
       <HamburgerMenu
         isOpen={isOpen}
         serviceTags={serviceTags}

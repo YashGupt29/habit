@@ -15,7 +15,7 @@ const Button = ({
         variant === "primary" && !color,
       "bg-gray-500 text-white hover:bg-gray-600":
         variant === "secondary" && !color,
-      "bg-transparent border border-gray-500 text-gray-500 hover:bg-gray-100":
+      "bg-transparent border border-gray-500 text-[#00732F] hover:bg-lime-400":
         variant === "ghost" && !color,
     },
     className

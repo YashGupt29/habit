@@ -7,7 +7,7 @@ import Button from "../Reusable_components/button";
 const Hero = () => {
   return (
     <div
-      className="relative flex-grow  bg-cover bg-center"
+      className="relative flex-grow  bg-cover bg-center pb-[10rem] mx-[0.2rem]"
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50" />
